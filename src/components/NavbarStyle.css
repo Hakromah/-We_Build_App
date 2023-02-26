@@ -6,7 +6,40 @@
 }
 
 .nav-container {
+  position: fixed;
+  display: flex;
   width: auto;
-  height: 80px;
   background: burlywood;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 25px;
+}
+.nav-container .active {
+  color: red;
+}
+.nav-container .logo {
+  color: chartreuse;
+  text-decoration: none;
+  align-self: center;
+}
+.nav-container .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container .navigation .uls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 1;
+  transition: 0.5s;
+}
+.nav-container .navigation .uls .nav_list_item {
+  list-style-type: none;
+}
+.nav-container .navigation .uls .nav_list_item .navLink {
+  text-decoration: none;
+  display: block;
+  padding: 40px 12px;
 }/*# sourceMappingURL=NavbarStyle.css.map */

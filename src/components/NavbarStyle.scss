@@ -1,12 +1,50 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Kanit', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
 }
 
 .nav-container {
-   width: auto;
-   height: 80px;
-   background: burlywood;
+	.active {
+		color: red;
+	}
+	position: fixed;
+	display: flex;
+	width: auto;
+	background: burlywood;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 25px;
+
+	.logo {
+		color: chartreuse;
+		text-decoration: none;
+		align-self: center;
+	}
+
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.uls {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			z-index: 1;
+			transition: 0.5s;
+
+			.nav_list_item {
+				list-style-type: none;
+
+				.navLink {
+					text-decoration: none;
+					display: block;
+					padding: 40px 12px;
+				}
+			}
+		}
+	}
 }
