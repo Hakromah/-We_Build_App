@@ -1,8 +1,11 @@
+import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+     <About/>
+     <Services/>
     </div>
   );
 }
