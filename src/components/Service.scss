@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 .service_container {
+   padding: 35px 34px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: aquamarine;
 
   .service_header {
     margin-bottom: 10px;

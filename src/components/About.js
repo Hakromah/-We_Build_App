@@ -11,11 +11,11 @@ const About = () => {
           WE ARE <span className="the_lidear">THE LEADER</span> IN CONSTRUCTION
           INDUSTRY
         </h1>
-        <h3>
+        <h3 className="nested-title">
           TEMPOR ERAT ELITR AT REBUM AT AT CLITA. DIAM DOLOR DIAM IPSUM TEMPOR
           SIT DIAM AMET DIAM ET EOS LABORE
         </h3>
-        <p>
+        <p className="bottom_text">
           Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor
           diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet
           diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed
@@ -53,12 +53,12 @@ const About = () => {
             </p>
           </div>
         </div>
-        <p>
+        <p className="bottom_text">
           Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor
           diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet
           diam et eos labore
         </p>
-        <div>
+        <div className="about-signature">
           <img src={signature} alt="signature" />
         </div>
       </div>
