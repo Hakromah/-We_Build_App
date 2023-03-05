@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 function NavLayout({togodark, clStyle}) {
 	return (
-		<div>
+		<div className='pppppages'>
 			<Navbar togodark={togodark} clStyle={clStyle}/>
 			<Routes>
 				<Route exact path="/" element={<Home />} />
