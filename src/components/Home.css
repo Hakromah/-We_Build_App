@@ -3,7 +3,7 @@
 }
 
 .home-container {
-  height: 100vh;
+  height: calc(100vh - 92px);
   position: relative;
 }
 .home-container .bgStyle {
@@ -58,6 +58,32 @@
 }
 .home-container .bgStyle .carousel-angles .angles i {
   width: 50px;
+}
+@media screen and (max-width: 425px) {
+  .home-container .bgStyle .homeContents .home-text {
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+  }
+  .home-container .bgStyle .homeContents .home-btn {
+    padding: 10px 15px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home-container .bgStyle .homeContents .home-text {
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+  }
+  .home-container .bgStyle .homeContents .home-btn {
+    padding: 10px 15px;
+    align-items: center;
+  }
+  .home-container .bgStyle .icon_style {
+    color: #fd5d14;
+    font-size: 70px;
+  }
 }
 @media screen and (max-width: 320px) {
   .home-container .bgStyle {
