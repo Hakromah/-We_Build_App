@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
 import NavLayout from './components/NavLayout';
-import './components/Home.scss'
-
+import './components/Home.scss';
 
 function App() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
-	const colorStyle ={
+	const colorStyle = {
 		background: 'beige',
 		cursor: 'pointer',
 		color: 'grey',
-		fontSize: '18px',
-		borderRadius: '6px',
-		marginRight: '10px'
-
-	}
+		fontSize: '15px',
+		borderRadius: '5px',
+		marginRight: '20px',
+	};
 
 	return (
 		<div className={isDarkMode && 'darkMode'}>
-			<NavLayout togodark={toggleDarkMode} clStyle={colorStyle}/>
+			<NavLayout togodark={toggleDarkMode} clStyle={colorStyle} />
 		</div>
 	);
 }

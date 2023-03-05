@@ -3,7 +3,7 @@
 }
 
 .home-container {
-	height: 100vh;
+	height: calc(100vh - 92px);
 	position: relative;
 
 	.bgStyle {
@@ -62,6 +62,46 @@
 				i {
 					width: 50px;
 				}
+			}
+		}
+	}
+	@media screen and (max-width: 425px) {
+		.bgStyle {
+			.homeContents {
+				.home-text {
+					font-size: 25px;
+					text-align: center;
+					padding: 25px;
+				}
+				.home-btn {
+					padding: 10px 15px;
+					align-items: center;
+				}
+
+			}
+
+		}
+	}
+
+	@media screen and (max-width: 375px) {
+		.bgStyle {
+			.homeContents {
+
+				.home-text {
+					font-size: 25px;
+					text-align: center;
+					padding: 25px;
+				}
+				.home-btn {
+					padding: 10px 15px;
+					align-items: center;
+				}
+
+			}
+
+			.icon_style {
+				color: #fd5d14;
+				font-size: 70px;
 			}
 		}
 	}
