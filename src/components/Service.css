@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: aquamarine;
+  background: #f4f6f8;
 }
 .service_container .service_header {
   margin-bottom: 10px;
@@ -36,6 +36,7 @@
   height: 420px;
   gap: 6px;
   width: 300px;
+  background-color: #fff;
 }
 .service_container .cards .service_card .service_img {
   height: 300px;
@@ -50,6 +51,7 @@
 }
 .service_container .cards .service_card .service_readMore {
   padding: 5px;
+  color: orangered;
 }
 .service_container .cards .service_card .service_icon {
   position: absolute;
@@ -58,9 +60,140 @@
   top: 210px;
   border-radius: 50%;
   padding: 10px;
-  background-color: white;
+  background-color: #fff;
   color: orangered;
   font-size: 30px;
   text-align: center;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .service_container .service_header {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+  }
+  .service_container .cards {
+    gap: 70px;
+  }
+  .service_container .cards .service_card {
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_img {
+    height: 300px;
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_icon {
+    top: 170px;
+  }
+  .service_container .cards .service_text {
+    width: 200px;
+    padding: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .service_container .service_header {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+  }
+  .service_container .cards {
+    margin: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_container .cards .service_card {
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    gap: 6px;
+    width: 300px;
+  }
+  .service_container .cards .service_card .service_img {
+    height: 300px;
+    width: 300px;
+  }
+  .service_container .cards .service_card .service_title {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .service_container .cards .service_card .service_text {
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_readMore {
+    padding: 5px;
+  }
+  .service_container .cards .service_card .service_icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 247px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+    color: orangered;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .service_container .service_header {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+  }
+  .service_container .cards {
+    margin: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_container .cards .service_card {
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    gap: 6px;
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_img {
+    height: 300px;
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_title {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .service_container .cards .service_card .service_text {
+    width: 250px;
+  }
+  .service_container .cards .service_card .service_readMore {
+    padding: 5px;
+  }
+  .service_container .cards .service_card .service_icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 170px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+    color: orangered;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=Service.css.map */
