@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.service_container {
+   padding: 35px 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aquamarine;
+
+  .service_header {
+    margin-bottom: 10px;
+   text-align: center;
+    font-size: 30px;
+    width: 600px;
+  }
+
+  .cards{
+margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+    .service_card {
+        position: relative;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 420px;
+        gap: 6px;
+        width: 300px;
+
+        .service_img {
+          height: 300px;
+          width: 300px;
+        }
+        .service_title {
+          font-size: 12px;
+          margin-top: 30px;
+        }
+
+        .service_text {
+          width: 250px;
+        }
+
+        .service_readMore {
+          padding: 5px;
+        }
+
+        .service_icon {
+          position: absolute;
+          height: 80px;
+          width: 80px;
+          top: 210px;
+          border-radius: 50%;
+          padding: 10px;
+          background-color: white;
+          color: orangered;
+          font-size: 30px;
+          text-align: center;
+          padding: 20px;
+        }
+      }
+
+  }
+
+}
