@@ -11,7 +11,7 @@
 		flex-direction: column;
 		background: rgba(2, 7, 31, 0.6);
 		position: absolute;
-		z-index: 999;
+		z-index: 99;
 		width: 100%;
 		height: 100%;
 		justify-content: center;
@@ -77,13 +77,16 @@
 					padding: 10px 15px;
 					align-items: center;
 				}
+
 			}
+
 		}
 	}
 
 	@media screen and (max-width: 375px) {
 		.bgStyle {
 			.homeContents {
+
 				.home-text {
 					font-size: 25px;
 					text-align: center;
@@ -93,6 +96,7 @@
 					padding: 10px 15px;
 					align-items: center;
 				}
+
 			}
 
 			.icon_style {
