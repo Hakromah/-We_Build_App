@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import './Home.scss';
 import home_data from './HomeData';
 import '../components/Navbar.js';
-import About from './About';
-import Services from './Services';
 
 const Home = () => {
 	const [currentState, setCurrentState] = useState(0);
@@ -52,8 +50,6 @@ const Home = () => {
 					))}
 				</div>
 			</div>
-			<About/>
-			<Services/>
 		</div>
 	);
 };
