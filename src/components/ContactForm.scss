@@ -1,0 +1,368 @@
+@import "./global.scss";
+
+.form-container {
+  display: flex;
+  gap: 20px;
+  margin: 50px;
+
+  .form-left {
+    flex: 1;
+    padding: 30px;
+
+    .contact-title {
+      font-size: 50px;
+
+      .call {
+        color: #fd5d14;
+      }
+    }
+
+    .form-text {
+      color: #7777;
+      padding: 10px 0px;
+    }
+    .form-quote {
+      background-color: #fd5d14;
+      padding: 15px;
+      width: 220px;
+      margin: 20px 0px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .form-right {
+    flex: 2;
+    background-color: #f4f6f8;
+    padding: 48px;
+    color: #777777;
+
+    .main-form {
+      .formBtn {
+        width: 100%;
+      }
+
+      .textarea {
+        width: 100%;
+      }
+      input[type="text"] {
+        height: 50px;
+        width: 49.5%;
+        padding: 20px 1%;
+        margin: 10px 0px;
+      }
+      input[type="email"] {
+        height: 50px;
+        width: 49.5%;
+        padding: 20px 1%;
+        margin: 10px 0px;
+      }
+
+      input[type="date"] {
+        height: 50px;
+        width: 49.5%;
+        padding: 20px 1%;
+        margin: 10px 0px;
+      }
+
+      input[type="time"] {
+        height: 50px;
+        width: 49.5%;
+        padding: 20px 1%;
+        margin-left: 5px;
+      }
+
+      .textarea {
+        height: 150px;
+      }
+
+      .formBtn {
+        position: relative;
+        height: 50px;
+        margin-top: 10px;
+        border: none;
+        background-color: #fd5d14;
+        color: #fff;
+        &:hover::after {
+          content: "";
+          display: block;
+          background-color: black;
+          position: absolute;
+          width: 250px;
+          height: 5px;
+          margin-top: 1.5%;
+          margin-right: 33%;
+          right: 10px;
+          text-align: center;
+        }
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    flex-direction: column;
+
+    .form-left {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      padding: 20px;
+      width: 100%;
+
+      .contact-title {
+        font-size: 17px;
+
+        .call {
+          color: #fd5d14;
+        }
+      }
+
+      .form-text {
+        color: #7777;
+        padding: 10px 0px;
+        font-size: 14px;
+      }
+      .form-quote {
+        background-color: #fd5d14;
+        padding: 15px;
+        width: 220px;
+        margin: 15px 0px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+
+    .form-right {
+      flex: 1;
+      background-color: #f4f6f8;
+      padding: 50px 50px;
+      color: #777777;
+      width: 100%;
+
+      .main-form {
+        .formBtn {
+          width: 100%;
+        }
+
+        .textarea {
+          width: 100%;
+        }
+        input[type="text"] {
+          height: 30px;
+          width: 49.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+        input[type="email"] {
+          height: 30px;
+          width: 49.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="date"] {
+          height: 30px;
+          width: 49.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="time"] {
+          height: 30px;
+          width: 49.5%;
+          padding: 12px 1%;
+          margin-left: 5px;
+        }
+
+        .textarea {
+          height: 100px;
+        }
+
+        .formBtn {
+          height: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  @include large-mobile {
+    .form-left {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      padding: 20px;
+      width: 100%;
+
+      .contact-title {
+        font-size: 17px;
+
+        .call {
+          color: #fd5d14;
+        }
+      }
+
+      .form-text {
+        color: #7777;
+        padding: 10px 0px;
+        font-size: 14px;
+      }
+      .form-quote {
+        background-color: #fd5d14;
+        padding: 13px;
+        width: 200px;
+        margin: 10px 0px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+
+    .form-right {
+      flex: 1;
+      background-color: #f4f6f8;
+      padding: 30px 10px;
+      color: #777777;
+      width: 100%;
+
+      .main-form {
+        .formBtn {
+          width: 100%;
+        }
+
+        .textarea {
+          width: 100%;
+        }
+        input[type="text"] {
+          height: 30px;
+          width: 49%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+        input[type="email"] {
+          height: 30px;
+          width: 49%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="date"] {
+          height: 30px;
+          width: 49%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="time"] {
+          height: 30px;
+          width: 49%;
+          padding: 12px 1%;
+          margin-left: 5px;
+        }
+
+        .textarea {
+          height: 100px;
+        }
+
+        .formBtn {
+          height: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  @include large-mobile {
+    .form-left {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      padding: 20px;
+      width: 100%;
+
+      .contact-title {
+        font-size: 17px;
+
+        .call {
+          color: #fd5d14;
+        }
+      }
+
+      .form-text {
+        color: #7777;
+        padding: 10px 0px;
+        font-size: 14px;
+      }
+      .form-quote {
+        background-color: #fd5d14;
+        padding: 8px;
+        width: 130px;
+        margin: 10px 0px;
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+
+    .form-right {
+      flex: 1;
+      background-color: #f4f6f8;
+      padding: 30px 10px;
+      color: #777777;
+      width: 100%;
+
+      .main-form {
+        .formBtn {
+          width: 100%;
+        }
+
+        .textarea {
+          width: 100%;
+        }
+        input[type="text"] {
+          height: 30px;
+          width: 48.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+        input[type="email"] {
+          height: 30px;
+          width: 48.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="date"] {
+          height: 30px;
+          width: 48.5%;
+          padding: 12px 1%;
+          margin: 10px 0px;
+        }
+
+        input[type="time"] {
+          height: 30px;
+          width: 48.5%;
+          padding: 12px 1%;
+          margin-left: 5px;
+        }
+
+        .textarea {
+          height: 100px;
+        }
+
+        .formBtn {
+          height: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
