@@ -107,7 +107,7 @@
   font-size: 70px;
   color: #f4f6f8;
   position: absolute;
-  z-index: 150;
+  z-index: 6;
 }
 .dream-container .drem_pbsolute .abso_relative .midle-box {
   display: flex;
