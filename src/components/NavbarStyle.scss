@@ -170,27 +170,27 @@
 // }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 .pages {
-	color: rgb(0, 13, 255);
-	text-align: center;
-	font-size: 3.5rem;
-	font-weight: bolder;
-	margin-top: 20%;
+  color: rgb(0, 13, 255);
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-top: 20%;
 }
 @media screen and (max-width: 996px) {
-	.pages {
-		color: rgb(0, 13, 255);
-		text-align: center;
-		font-size: 2rem;
-		font-weight: bolder;
-		margin-top: 20%;
-	}
+  .pages {
+    color: rgb(0, 13, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 20%;
+  }
 }
 
 .navbar {
@@ -411,5 +411,4 @@
 				}
 			}
 		}
-	}
 }
