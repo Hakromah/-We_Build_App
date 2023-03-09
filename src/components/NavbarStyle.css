@@ -24,10 +24,11 @@
 }
 .navbar {
   background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
+  background-size: 4px 4px;
+  background-color: #040f28 !important;
   position: sticky;
   display: flex;
   width: 100%;
-  background-color: #040f28 !important;
   align-items: center;
   top: 0;
   z-index: 100;
@@ -107,7 +108,9 @@
     top: 92px;
     opacity: 1;
     width: 20%;
-    background: #040f28;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 3px 3px;
+    background-color: #040f28 !important;
     align-items: center;
     position: fixed;
     justify-content: flex-end;
@@ -133,6 +136,9 @@
     font-size: 70px;
   }
   .navbar .nav-container .nav-ul {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 5px 5px;
+    background-color: #040f28 !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;

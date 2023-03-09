@@ -5,6 +5,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 import Pages from './Pages';
 import { Routes, Route } from 'react-router-dom';
+import Dream from './Dream';
 
 function NavLayout({togodark, clStyle}) {
 	return (
@@ -19,6 +20,7 @@ function NavLayout({togodark, clStyle}) {
 			</Routes>
 			<About/>
 			<Services/>
+			<Dream/>
 		</div>
 	);
 }
