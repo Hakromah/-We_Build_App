@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import Pages from './Pages';
 import { Routes, Route } from 'react-router-dom';
 import Dream from './Dream';
+import ContactForm from './ContactForm';
 
 function NavLayout({togodark, clStyle}) {
 	return (
@@ -20,6 +21,7 @@ function NavLayout({togodark, clStyle}) {
 			</Routes>
 			<About/>
 			<Services/>
+			<ContactForm/>
 			<Dream/>
 		</div>
 	);

@@ -2,12 +2,9 @@ import { useState, useEffect } from 'react';
 import './Home.scss';
 import home_data from './HomeData';
 import '../components/Navbar.js';
-// import About from './About';
-// import Services from './Services';
-import ContactForm from "./ContactForm";
 
 const Home = () => {
-  const [currentState, setCurrentState] = useState(0);
+	const [currentState, setCurrentState] = useState(0);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -20,13 +17,16 @@ const Home = () => {
 		return () => clearInterval(timer);
 	}, [currentState]);
 
-  const gotoNext = (currentState) => {
-    setCurrentState(currentState);
-  };
-
-
 	const gotoNext = (currentState) => {
 		setCurrentState(currentState);
+	};
+
+	const bgImageStyle = {
+		backgroundImage: `url(${home_data[currentState].url})`,
+		backgroundPosition: 'center',
+		backgroundSize: 'cover',
+		height: '100%',
+		zIndex: -1
 	};
 
 	return (
@@ -56,7 +56,6 @@ const Home = () => {
 			</div>
 		</div>
 	);
-
 };
 
 export default Home;
