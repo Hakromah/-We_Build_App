@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import './Home.scss';
 import home_data from './HomeData';
 import '../components/Navbar.js';
+import About from './About';
+import Services from './Services';
+import ContactForm from './ContactForm';
+import Dream from './Dream';
+import ExpertArea from './ExpertArea';
 
 const Home = () => {
 	const [currentState, setCurrentState] = useState(0);
@@ -26,7 +31,7 @@ const Home = () => {
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
 		height: '100%',
-		zIndex: -1
+		zIndex: -1,
 	};
 
 	return (
@@ -51,8 +56,11 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="sections">
-				{/* <About />
-				<Services /> */}
+				<About />
+				<Services />
+				<ContactForm />
+				<Dream />
+				<ExpertArea />
 			</div>
 		</div>
 	);
