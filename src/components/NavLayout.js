@@ -7,6 +7,7 @@ import Pages from './Pages';
 import { Routes, Route } from 'react-router-dom';
 import Dream from './Dream';
 import ContactForm from './ContactForm';
+import ExpertArea from './ExpertArea';
 
 function NavLayout({togodark, clStyle}) {
 	return (
@@ -23,6 +24,7 @@ function NavLayout({togodark, clStyle}) {
 			<Services/>
 			<ContactForm/>
 			<Dream/>
+			<ExpertArea/>
 		</div>
 	);
 }
