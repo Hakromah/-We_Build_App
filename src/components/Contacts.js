@@ -3,7 +3,25 @@ import './Contacts.scss'
 function Contacts() {
   return (
     <div className="contact-container">
-     <h1>Contact World ....</h1>
+     <div className="bgImg">
+      <h1 className="con-title">Contact</h1>
+      <p><span className="con-home">Home</span> / Contact</p>
+     </div>
+
+     <div className="bottom-container">
+      <div className="map">
+        Map
+      </div>
+      <div className="form-contact">
+        <form>
+          <input type='text' placeholder="Your Name" required />
+          <input type='text' placeholder="Your Email" required />
+          <input type='text' placeholder="Subject" required />
+          <textarea cols={8}rols={15}/>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+     </div>
     </div>
   );
 }
