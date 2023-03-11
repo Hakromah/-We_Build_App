@@ -1,31 +1,122 @@
 .contact-container {
   width: 100%;
   display: flex;
-  height: 90vh;
-flex-direction: column;
+  // height: 90vh;
+  flex-direction: column;
+
   .bgImg {
     background-image: url("../assets/images/contact-image.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 30vh;
+    // height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
 
-    .con-title{
-      font-size: 60px;
-      color:#fff;
-    }
+    .bg-dark {
+      opacity: 1;
+      background-color: rgb(0, 0, 0, 0.7);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .con-title {
+        font-size: 90px;
+        color: #f9f9f9;
+        padding-top: 120px;
+      }
 
-    p{
-      color:#fff;
-      font-weight: bold;
+      .text {
+        padding-bottom: 120px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 10px;
+        .con-home {
+          color: #fd5d14;
+        }
+      }
+    }
+  }
+  .middle-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .middle-title {
+      margin: 50px;
+      width: 350px;
       font-size: 30px;
-      .con-home{
-        color:#fd5d14;
+      text-align: center;
+      .cl-orange {
+        color: #fd5d14;
+      }
+    }
+    .bottom-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 80%;
+
+      .map {
+        background-color: lightgreen;
+       
+        justify-content: flex-start;
+        width: 700px;
+        margin-right: 500px;
+        height: 70vh;
+        background-image: url("../assets/images/map.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .form-contact {
+        background-color: #f4f6f8;
+        width: 50%;
+        margin-left: 550px;
+        position: absolute;
+        // height: 40vh;
+        z-index: 2;
+
+        .form {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          margin: 50px;
+
+          .inpt-field {
+            width: 48.8%;
+            height: 45px;
+          }
+
+          .subject-field {
+            width: 100%;
+            height: 45px;
+          }
+
+          .txt-area {
+            width: 100%;
+          }
+
+          .form-submit {
+            width: 100%;
+            background-color: #fd5d14;
+            color: #ffffff;
+            padding: 16px;
+            border: none;
+            &:hover {
+              background-color: rgb(167, 104, 227);
+              color: #fff;
+            }
+          }
+        }
       }
     }
   }
