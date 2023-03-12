@@ -1,0 +1,162 @@
+.client_container {
+	padding: 90px 90px;
+	background-color: #f4f6f8 !important;
+
+	.h1div {
+		display: flex;
+		justify-content: center;
+
+		.h1Text {
+			font-size: 48px;
+			width: 600px;
+			margin: 0 0 24px;
+			text-align: center;
+			.happyRead {
+				color: #fd5d14;
+			}
+		}
+	}
+
+	.main_area {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 'overlap';
+
+		.leftImage {
+			grid-area: overlap;
+		}
+
+		.slideContent {
+			display: flex;
+			flex-direction: row;
+			justify-self: flex-end;
+			align-self: center;
+			grid-area: overlap;
+			width: 950px;
+
+			.innerImg {
+				padding: 16px;
+				background-color: #fff;
+			}
+
+			.centerArea {
+				display: flex;
+				flex-direction: column;
+				padding: 16px 20px 16px;
+				margin-left: 20px;
+				justify-content: center;
+				.h4Text {
+					font-size: 24px;
+					color: #040f28;
+				}
+				.prof {
+					font-size: 16px;
+					color: #77777777;
+				}
+				.pText {
+					display: block;
+					margin-block-start: 1em;
+					margin-block-end: 1em;
+					color: #77777777;
+					font-size: 20px;
+					.quote {
+						font-size: 35px;
+						color: #fd5d14;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			.slideContent {
+				width: 600px;
+
+				.centerArea {
+					padding: 16px;
+				}
+				.innerImg img {
+					width: 200px;
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.client_container {
+		padding: 90px 48px;
+
+		.leftImage img {
+			width: 300px;
+			height: 350px;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.client_container {
+		width: 100%;
+		.h1div {
+			.h1Text {
+				font-size: 40px;
+			}
+		}
+		.main_area {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: flex-start;
+
+			.leftImage {
+				display: none;
+			}
+
+			.slideContent {
+				display: flex;
+				flex-direction: row;
+				justify-self: flex-start;
+				width: 100%;
+
+				.centerArea {
+					display: flex;
+					flex-direction: column;
+					justify-self: flex-start;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+		.client_container {
+			.h1div {
+				.h1Text {
+					font-size: 40px;
+				}
+			}
+			.main_area {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
+				grid-template-areas: 'overlap';
+				.leftImage {
+					display: none;
+				}
+
+				.slideContent {
+					display: grid;
+					justify-self: flex-end;
+					align-self: center;
+					grid-area: overlap;
+					.innerImg {
+						display: flex;
+						padding: 16px;
+						background-color: #511818;
+						justify-content: center;
+						img {
+							width: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
