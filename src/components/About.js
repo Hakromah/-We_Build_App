@@ -6,6 +6,7 @@ import box from '../assets/images/Capture.PNG';
 const About = () => {
 	return (
 		<div className="about_container">
+		
 			<div className="about_nested about_box1">
 				<h1 className="about_title">
 					WE ARE <span className="the_lidear">THE LEADER</span> IN
