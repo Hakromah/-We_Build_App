@@ -7,6 +7,7 @@ import Services from './Services';
 import ContactForm from './ContactForm';
 import Dream from './Dream';
 import ExpertArea from './ExpertArea';
+import HappyClients from './HappyClients';
 
 const Home = () => {
 	const [currentState, setCurrentState] = useState(0);
@@ -61,6 +62,7 @@ const Home = () => {
 				<ContactForm />
 				<Dream />
 				<ExpertArea />
+				<HappyClients/>
 			</div>
 		</div>
 	);

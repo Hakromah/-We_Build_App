@@ -31,15 +31,15 @@ function Dream() {
 				{down_Data &&
 					down_Data.map((ell) => (
 						<div className="abso_relative">
-							<span className='img-span'>
-							<img
-								className="dwImages"
-								src={ell.downImg}
-								style={imgStyles}
-								alt="down images"
-							/>
+							<span className="img-span">
+								<img
+									className="dwImages"
+									src={ell.downImg}
+									style={imgStyles}
+									alt="down images"
+								/>
 							</span>
-							<i className='plusOnHover'>{ell.hoverPlus}</i>
+							<i className="plusOnHover">{ell.hoverPlus}</i>
 							<a href={ell.ahref} className="midle-box">
 								<h4 className="dwh4">{ell.projetText}</h4>
 								<div className="spann">
