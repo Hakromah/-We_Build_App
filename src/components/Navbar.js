@@ -54,22 +54,22 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../components/NavbarStyle.scss';
 
-function NavBar({togodark, clStyle}) {
+function NavBar({ togodark, clStyle }) {
 	const [close, setClose] = useState(false);
 
-
 	const handleClick = () => setClose(!close);
-
-
 
 	return (
 		<>
 			<div className="navbar">
 				<div className="nav-container">
 					<NavLink exact to="/" className="nav-logo">
-						CodePractice
+						{/* <i class="fa-sharp fa-regular fa-apartment"></i> */}
+							WEBUILD
 					</NavLink>
-					<button onClick={togodark} style={clStyle}>COLORS</button>
+					<button onClick={togodark} style={clStyle}>
+						COLORS
+					</button>
 					<ul className={close ? 'nav-ul openClose hideSide' : 'nav-ul'}>
 						<li className="nav-items">
 							<NavLink
