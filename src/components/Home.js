@@ -9,6 +9,7 @@ import BlogPost from "./BlogPost";
 import Dream from './Dream';
 import ExpertArea from './ExpertArea';
 import HappyClients from './HappyClients';
+import Footer from "./Footer";
 
 const Home = () => {
   const [currentState, setCurrentState] = useState(0);
@@ -59,10 +60,11 @@ const Home = () => {
         <About />
         <Services />
         <ContactForm />
-        <Dream /> 
+        <Dream />
         <ExpertArea />
 				<HappyClients/>
         <BlogPost/>
+        <Footer/>
       </div>
     </div>
   );
