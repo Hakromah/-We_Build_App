@@ -24,7 +24,7 @@ const BlogPost = () => {
                     <img src={data.img2} alt="profile" width='50px' height='50px' className='user' />
                     <span className="name">{data.name}</span>
                   </p>
-                  <p>{data.icon} {data.date}</p>
+                  <p className="icons"><span className="icon">{data.icon} </span>{data.date}</p>
                 </div>
                 <h3 className="data-text">{data.text}</h3>
                 <p className="data-read">{data.read} {data.arrow}</p>
