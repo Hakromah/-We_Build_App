@@ -2,6 +2,7 @@ import React from "react";
 import About from "../About";
 import ContactForm from "../ContactForm";
 import ExpertArea from "../ExpertArea";
+import Footer from '../Footer'
 import "./AboutHome.scss";
 function AboutHome() {
   return (
@@ -17,6 +18,7 @@ function AboutHome() {
       <About />
       <ContactForm />
       <ExpertArea />
+      <Footer/>
     </div>
   );
 }

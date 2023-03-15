@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from '../ContactForm'
+import Footer from '../Footer'
 import HappyClients from '../HappyClients'
 import Services from '../Services'
 import './ServicesHome.scss'
@@ -17,6 +18,7 @@ function ServiceHome() {
       <Services/>
       <ContactForm/>
       <HappyClients/>
+      <Footer/>
     </div>
   )
 }
