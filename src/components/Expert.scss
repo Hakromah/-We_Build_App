@@ -5,14 +5,19 @@
 	width: 100%;
 	flex-direction: column;
 	position: relative;
-	padding: 90px 48px;
+	padding: 90px 0px;
 	overflow-x: hidden;
 
-	.title_h1 {
+	.h1Div {
 		width: 600px;
 		font-size: 45px;
 		margin: 0px 0px 24px;
+		.title_h1 {
+			font-size: 45px;
+			margin: 0px 0px 24px;
+		}
 	}
+
 
 	.centerArea {
 		display: flex;
@@ -55,11 +60,23 @@
 		}
 	}
 	@media screen and (max-width: 1024px) {
+
 		.centerArea {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
-			gap: 40px;
+			//gap: 40px;
+		}
+	}
+}
+@media screen and (max-width: 425px) {
+	.section {
+		.h1Div {
+			width: 100%;
+			.title_h1 {
+				font-size: 25px;
+				text-align: center;
+			}
 		}
 	}
 }

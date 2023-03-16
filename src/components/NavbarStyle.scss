@@ -395,7 +395,15 @@
 
 			.nav-ul {
 				display: flex;
-				background: #040f28;
+				background-image: -webkit-repeating-radial-gradient(
+					center center,
+					rgba(256, 256, 256, 0.2),
+					rgba(256, 256, 256, 0.2) 1px,
+					transparent 1px,
+					transparent 100%
+				);
+				background-size: 5px 5px;
+				background-color: #040f28 !important;
 				width: 40%;
 				gap: 10px;
 
