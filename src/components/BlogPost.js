@@ -12,7 +12,7 @@ const BlogPost = () => {
       </div>
       <div className="card-container">
         <div className="card-blog">
-          
+
           <div  className="card-blog">
             {blogData.map((data) => (
                 <div className="card-blogs">

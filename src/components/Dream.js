@@ -4,7 +4,7 @@ import down_Data from './DownData';
 import '../components/Dream.scss';
 
 function Dream() {
-	
+
 
 	const imgStyles = {
 		with: '370x',

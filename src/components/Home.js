@@ -12,6 +12,7 @@ import HappyClients from './HappyClients';
 import Footer from './Footer';
 
 const Home = () => {
+	//dark mode area
 	const [currentState, setCurrentState] = useState(0);
 
 	useEffect(() => {
@@ -58,6 +59,7 @@ const Home = () => {
 					))}
 				</div>
 			</div>
+
 			<div className="sections">
 				<About />
 				<Services />
@@ -68,9 +70,7 @@ const Home = () => {
 				<BlogPost />
 				<Footer />
 			</div>
-      <div>
-
-      </div>
+			<div></div>
 		</div>
 	);
 };
