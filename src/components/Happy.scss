@@ -68,7 +68,7 @@
 			}
 		}
 
-		@media screen and (max-width: 1024px) {
+		@media screen and (max-width: 1025px) {
 			.slideContent {
 				width: 600px;
 
@@ -83,7 +83,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
 	.client_container {
 		padding: 90px 48px;
 
@@ -93,7 +93,7 @@
 		}
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	.client_container {
 		width: 100%;
 		.h1div {
@@ -125,11 +125,16 @@
 		}
 	}
 
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 426px) {
 		.client_container {
 			.h1div {
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				//border: 1px solid hotpink;
 				.h1Text {
-					font-size: 40px;
+					font-size: 35px;
+					width: 100%;
 				}
 			}
 			.main_area {
@@ -152,7 +157,7 @@
 						background-color: #511818;
 						justify-content: center;
 						img {
-							width: 300px;
+							width: 100%;
 						}
 					}
 				}

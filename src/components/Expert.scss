@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	//width: 100%;
 	flex-direction: column;
 	position: relative;
 	padding: 90px 0px;
@@ -59,7 +59,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1025px) {
 
 		.centerArea {
 			display: flex;
@@ -69,8 +69,9 @@
 		}
 	}
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 	.section {
+		width: 100%;
 		.h1Div {
 			width: 100%;
 			.title_h1 {

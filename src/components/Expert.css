@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex-direction: column;
   position: relative;
   padding: 90px 0px;
@@ -54,7 +53,7 @@
 .section .centerArea .items .team_names :nth-child(2) {
   font-size: 16px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .section .centerArea {
     display: flex;
     justify-content: center;
@@ -62,7 +61,10 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+  .section {
+    width: 100%;
+  }
   .section .h1Div {
     width: 100%;
   }
