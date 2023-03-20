@@ -36,6 +36,10 @@
   padding: 16px;
   background-color: #fff;
 }
+.client_container .main_area .slideContent .innerImg img {
+  width: 250px;
+  height: 250px;
+}
 .client_container .main_area .slideContent .centerArea {
   display: flex;
   flex-direction: column;

@@ -178,6 +178,9 @@
     justify-content: center;
     text-align: center;
   }
+  .dream-container .drem_pbsolute .abso_relative .img-span .dwImages {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 376px) {
   .dream-container .texth1 {
@@ -189,5 +192,43 @@
     font-size: 25px;
     justify-content: center;
     text-align: center;
+  }
+  .dream-container .drem_pbsolute .abso_relative {
+    padding: 35px 20px;
+  }
+  .dream-container .drem_pbsolute .abso_relative .img-span .dwImages {
+    width: 280px;
+  }
+  .dream-container .dream-small {
+    display: flex;
+    padding: 0px 10px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .dream-container .texth1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  .dream-container .drem_pbsolute .abso_relative {
+    padding: 0px;
+  }
+  .dream-container .drem_pbsolute .abso_relative .img-span .dwImages {
+    width: 280px;
+  }
+  .dream-container .drem_pbsolute .abso_relative .midle-box {
+    width: 250px;
+    height: 100px;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .dream-container .drem_pbsolute .abso_relative .midle-box .dwh4 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=Dream.css.map */

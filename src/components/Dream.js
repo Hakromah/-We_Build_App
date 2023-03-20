@@ -4,8 +4,6 @@ import down_Data from './DownData';
 import '../components/Dream.scss';
 
 function Dream() {
-
-
 	const imgStyles = {
 		with: '370x',
 		height: '308px',
@@ -15,7 +13,6 @@ function Dream() {
 			<h1 className="texth1">
 				SOME OF OUR <span className="project">POPULAR </span>DREAM PROJECTS
 			</h1>
-
 			<div className="dream-small">
 				{portf_data &&
 					portf_data.map((el) => (

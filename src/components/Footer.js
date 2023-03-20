@@ -86,11 +86,15 @@ function Footer() {
 
 			<div className="footer_bottom">
 				<div className="copyright">
-					<a href="#!"> <span className='sitName'>&copy; Your Site Name</span><span className='allRight'>. All Rights Reserved.</span></a>
+					<a href="#!">
+						{' '}
+						<span className="sitName">&copy; Your Site Name</span>
+						<span className="allRight">. All Rights Reserved.</span>
+					</a>
 				</div>
 				<div className="shape"></div>
 				<div className="design">
-					<p className='pdown'>
+					<p className="pdown">
 						Designed by <a href="#!">HTML Codex</a>{' '}
 					</p>
 				</div>

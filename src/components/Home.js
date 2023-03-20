@@ -22,7 +22,7 @@ const Home = () => {
 			} else {
 				setCurrentState(currentState + 1);
 			}
-		}, 3000);
+		}, 5000);
 		return () => clearInterval(timer);
 	}, [currentState]);
 
@@ -70,7 +70,6 @@ const Home = () => {
 				<BlogPost />
 				<Footer />
 			</div>
-			<div></div>
 		</div>
 	);
 };

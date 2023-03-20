@@ -2,7 +2,8 @@
 	background-color: rgb(13, 14, 13);
 }
 
-.home-container, .dark{
+.home-container,
+.dark {
 	background-color: aquamarine;
 }
 
@@ -78,9 +79,13 @@
 			}
 		}
 	}
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 426px) {
 		.bgStyle {
 			.homeContents {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 				.home-text {
 					font-size: 25px;
 					text-align: center;
